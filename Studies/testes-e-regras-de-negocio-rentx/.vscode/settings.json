@@ -1,0 +1,15 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "rentx",
+      "database": "rentx",
+      "username": "docker",
+      "password": "ignite"
+    }
+  ]
+}

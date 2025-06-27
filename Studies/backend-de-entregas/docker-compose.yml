@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    entrypoint: .docker/entrypoint.sh
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - pgsql-ecommerce
+      # - pgsql-ecommerce-test
+
+  pgsql-ecommerce:
+    image: postgres:alpine
+    ports:
+      - "5482:5432"
+    container_name: "pgsql-ecommerce"
+    restart: always
+    volumes:
+      - ./.docker/data-ecommerce:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+
+  # pgsql-ecommerce-test:
+  #   image: postgres:alpine
+  #   ports:
+  #     - "5481:5432"
+  #   container_name: "pgsql-ecommerce-test"
+  #   restart: always
+  #   volumes:
+  #     - ./.docker/data-ecommerce-test:/var/lib/postgresql/data
+  #   environment:
+  #     POSTGRES_USER: pguser_test
+  #     POSTGRES_PASSWORD: pgpassword_test
+
+volumes:
+  data-ecommerce:
+  # data-ecommerce-test:

@@ -1,0 +1,19 @@
+# Qual imagem vai rodar
+FROM node
+
+# Difine uma pasta (um diretorio) onde agente quer que as nossas informações estejam contidas
+WORKDIR /usr/app
+
+# Copiar o package.json para dentro do diretorio setado acima
+COPY package.json ./
+
+# Baixar as dependencias
+RUN npm install
+
+# Copiar tudo para dentro da pasta setada a acima
+COPY . .
+
+EXPOSE 3333
+
+# Permite que agente rode os comandos que forem necessarios
+CMD ["npm","run","dev"] 
