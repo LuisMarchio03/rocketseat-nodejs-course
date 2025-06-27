@@ -2,7 +2,7 @@
 
 Repositório com todos os projetos, anotações, desafios e conteúdos desenvolvidos durante o curso de **Node.js** da [Rocketseat](https://rocketseat.com.br), utilizando **TypeScript**.
 
-> **ℹ️ Aviso:** Os conteúdos deste repositório abrangem práticas e versões que vão de **2019 até os dias atuais**, acompanhando a evolução dos cursos, bootcamps e eventos da plataforma. Você encontrará tanto exemplos atualizados quanto códigos de versões anteriores para fins comparativos e de aprendizado histórico.
+> **ℹ️ Aviso:** Os conteúdos deste repositório abrangem práticas e versões que vão de **2022 até os dias atuais**, acompanhando a evolução dos cursos, bootcamps e eventos da plataforma. Você encontrará tanto exemplos atualizados quanto códigos de versões anteriores para fins comparativos e de aprendizado histórico.
 
 ## 🧠 Conteúdo do Curso
 
